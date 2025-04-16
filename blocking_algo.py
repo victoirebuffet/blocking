@@ -84,7 +84,7 @@ def process_one_year(year, hemisphere):
     monthly_results = []
 
     for month in tqdm(np.arange(1, 13), desc=f" Year {year}"):
-        path = f'/work/crct/vb234125/EnAR/var/geopotential_{year}{str(month).zfill(2)}_reanaHS.nc'
+        path = f'/.../geopotential_{year}{str(month).zfill(2)}_reanaHS.nc'
         ds = xr.open_dataset(path)['z']
         ds = ds.sel(level=500) / 9.81
 
@@ -110,6 +110,6 @@ def process_one_year(year, hemisphere):
     result_ds = xr.Dataset({'blocking': full_year_result})
 
     # Save to NetCDF
-    output_path = f'/work/crct/vb234125/EnAR/blocking/blocking_{year}_{hemisphere}.nc'
+    output_path = f'/.../blocking/blocking_{year}_{hemisphere}.nc'
     result_ds.to_netcdf(output_path)
     print(f"Saved: {output_path}")
