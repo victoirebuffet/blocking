@@ -4,7 +4,7 @@ This repository contains the main Python script for detecting atmospheric blocki
 
 ## About
 
-The detection is based on meridional gradients of geopotential height (`z500`), evaluated at ±15° and ±30° latitude from a central latitude (`phi_zero`). Blocking is identified when the geopotential field satisfies three specific gradient thresholds indicating a reversal of the meridional flow.
+The detection is based on meridional gradients of geopotential height (`Z500`), evaluated at ±15° and ±30° latitude from a central latitude (`phi_zero`). Blocking is identified when the geopotential field satisfies three specific gradient thresholds indicating a reversal of the meridional flow.
 
 This method follows the algorithm presented in:
 > **Davini et al. (2020)** — *Blocking frequency in the Northern and Southern Hemisphere: The role of resolution and model configuration*  
