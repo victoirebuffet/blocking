@@ -46,4 +46,4 @@ To use the algorithm:
 
 ```python
 from blocking_algo import process_one_year
-process_one_year(1997, 'SH')```
+process_one_year(1997, 'SH')
